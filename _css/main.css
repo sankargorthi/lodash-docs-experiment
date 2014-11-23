@@ -72,6 +72,7 @@ pre .br0, pre .sy0, pre .kw1 { color:#ddd; }
   body { border:0; margin:0; -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; width:auto; }
   h1, h2, h3, h4, p, ul, ol { padding:0 10px; }
   pre { padding:5px 10px !important; }
+  #social { height: auto; }
 }
 
 /* large viewports */
