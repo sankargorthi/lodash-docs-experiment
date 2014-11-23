@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" id="index">
+ <head>
+  <meta charset="utf-8">
+  <title>Lo-Dash</title>
+  <meta name="viewport" content="initial-scale=.34">
+  <meta name="description" content="A utility library delivering consistency, customization, performance, &amp; extras.">
+  <link rel="stylesheet" href="/_css/main.src.css?20140609">
+  <link rel="feed alternate" type="application/atom+xml" href="https://github.com/lodash/lodash/commits/master.atom">
+  <!--[if lt IE 9]><script src="/_js/html5.js"></script><![endif]-->
+ </head>
+ <body>
+  <hgroup>
+   <h1>Lo-Dash <span>v2.4.1</span></h1>
+   <h2 class="description">A utility library delivering consistency, <a href="/custom-builds">customization</a>, <a href="/benchmarks">performance</a>, &amp; <a href="#features">extras</a>.</h2>
+  </hgroup>
+
+  <pre class="intro"><code>_.<span class="me1">assign</span><span class="br0">&#40;</span><span class="br0">&#123;</span> <span class="st0">'a'</span><span class="sy0">:</span> <span class="nu0">1</span> <span class="br0">&#125;</span><span class="sy0">,</span> <span class="br0">&#123;</span> <span class="st0">'b'</span><span class="sy0">:</span> <span class="nu0">2</span> <span class="br0">&#125;</span><span class="sy0">,</span> <span class="br0">&#123;</span> <span class="st0">'c'</span><span class="sy0">:</span> <span class="nu0">3</span> <span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span><br><span class="co1">// → { 'a': 1, 'b': 2, 'c': 3 }</span><br>_.<span class="me1">map</span><span class="br0">&#40;</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">3</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="kw2">function</span><span class="br0">&#40;</span>n<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="kw1">return</span> n <span class="sy0">*</span> <span class="nu0">3</span><span class="sy0">;</span> <span class="br0">&#125;</span><span class="br0">&#41;</span><span class="sy0">;</span><br><span class="co1">// → [3, 6, 9]</span></code></pre>
+  <p id="social"><iframe style="width:95px;height:20px" allowtransparency frameborder="0" scrolling="no" src="/github-btn.html?user=lodash&amp;repo=lodash&amp;count=true&amp;type=watch"></iframe><iframe style="width:95px; height:20px" allowtransparency frameborder="0" scrolling="no" src="/github-btn.html?user=lodash&amp;repo=lodash&amp;count=true&amp;type=fork"></iframe></p>
+
+  <h2 id="docs">Documentation</h2>
+  <ul>
+   <li><a href="/docs">API Documentation</a></li>
+   <li><a href="http://devdocs.io/lodash/">DevDocs – <em>a searchable interface for our documentation</em></a></li>
+  </ul>
+
+  <h2 id="download">Download</h2>
+  <p>Review the <a href="https://github.com/lodash/lodash/wiki/build-differences">build differences</a> &amp; pick the one that’s right for you.</p>
+  <ul class="multiline-items">
+   <li><a href="https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.js">Modern build</a> (<a href="https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.min.js">minified</a>)<br>For new environments like Chrome, Firefox, IE ≥ 9, &amp; Safari ≥ 5.1</li>
+   <li><a href="https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.compat.js">Compatibility build</a> (<a href="https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.compat.min.js">minified</a>)<br>For new &amp; old environments like IE ≤ 8 &amp; PhantomJS</li>
+   <li class="last-item"><a href="https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.underscore.js">Underscore build</a> (<a href="https://raw.github.com/lodash/lodash/2.4.1/dist/lodash.underscore.min.js">minified</a>)<br>A drop-in replacement for <a href="http://underscorejs.org/#1.5.2">Underscore v1.5.2</a></li>
+  </ul>
+  <p>CDN copies are available on <a href="http://cdnjs.com/libraries/lodash.js/">cdnjs</a> &amp; <a href="http://www.jsdelivr.com/#!lodash">jsDelivr</a>.<br>Create <a href="/custom-builds">custom builds</a> with only the features you need.<br>Love modules? We’ve got you covered with <a href="https://github.com/lodash/lodash-amd/tree/2.4.1">lodash-amd</a>, <a href="https://npmjs.org/package/lodash-node">lodash-node</a>, &amp; <a href="https://npmjs.org/browse/keyword/lodash-modularized">npm packages</a> per method.</p>
+
+  <h2 id="reference">Dive in</h2>
+  <p>Check out our <a href="/tests">unit tests</a>, <a href="/benchmarks">benchmarks</a>, <a href="https://github.com/lodash/lodash/wiki/Changelog">changelog</a>, <a href="https://github.com/lodash/lodash/wiki/Roadmap">roadmap</a>, as well as <a href="https://github.com/lodash/lodash/wiki/Resources">community created podcasts, posts, &amp; videos</a>.</p>
+
+  <h2 id="installation">Installation</h2>
+  <p>In a browser:</p>
+  <pre><code><span class="sy0">&lt;</span>script src<span class="sy0">=</span><span class="st0">&quot;lodash.js&quot;</span><span class="sy0">&gt;&lt;/</span>script<span class="sy0">&gt;</span></code></pre>
+  <p>In an AMD loader:</p>
+  <pre><code>require<span class="br0">(</span><span class="br0">[</span><span class="st0">'lodash'</span><span class="br0">]</span><span class="sy0">,</span> <span class="kw2">function</span><span class="br0">(</span>_<span class="br0">)</span> <span class="br0">{</span><span class="coMULTI">/*…*/</span><span class="br0">}</span><span class="br0">)</span><span class="sy0">;</span></code></pre>
+  <p>Using npm:</p>
+  <pre><code>$ npm i --save lodash<br><br>$ {sudo -H} npm i -g lodash<br>$ npm ln lodash</code></pre>
+  <p>In Node.js:</p>
+  <pre><code><span class="kw2">var</span> _ <span class="sy0">=</span> require<span class="br0">&#40;</span><span class="st0">'lodash'</span><span class="br0">&#41;</span><span class="sy0">;</span><br><span class="co1">// or as Underscore</span><br><span class="kw2">var</span> _ <span class="sy0">=</span> require<span class="br0">&#40;</span><span class="st0">'lodash/dist/lodash.underscore'</span><span class="br0">&#41;</span><span class="sy0">;</span></code></pre>
+  <p><strong>Note:</strong><br>Don’t assign values to the <a href="http://nodejs.org/api/repl.html#repl_repl_features">special variable</a> “<code>_</code>” when in the REPL</p>
+
+  <h2 id="features">Features <em>not</em> in Underscore</h2>
+  <ul class="features-items">
+   <li>~100% <a href="https://coveralls.io/r/lodash">code coverage</a></li>
+   <li>Module bundles for <a href="https://github.com/lodash/lodash-amd/tree/2.4.1">AMD</a> &amp; <a href="https://npmjs.org/package/lodash-node">Node.js</a> as well as <a href="https://npmjs.org/browse/keyword/lodash-modularized">npm packages</a></li>
+   <li>Follows <a href="http://semver.org/">semantic versioning</a> for releases</li>
+   <li><a href="/docs#_"><code>_(…)</code></a> supports intuitive chaining</a></li>
+   <li><a href="/docs#at"><code>_.at</code></a> for cherry-picking values</a></li>
+   <li><a href="/docs#bindKey"><code>_.bindKey</code></a> for binding <a href="http://michaux.ca/articles/lazy-function-definition-pattern"><em>“lazy”</em></a> defined methods</li>
+   <li><a href="/docs#clone"><code>_.clone</code></a> supports shallow cloning of <code>Date</code> &amp; <code>RegExp</code> objects</li>
+   <li><a href="/docs#cloneDeep"><code>_.cloneDeep</code></a> for deep cloning arrays &amp; objects</li>
+   <li><a href="/docs#contains"><code>_.contains</code></a> accepts a <code>fromIndex</code></li>
+   <li><a href="/docs#create"><code>_.create</code></a> for easier object inheritance</li>
+   <li><a href="/docs#curry"><code>_.curry</code></a> for creating <a href="http://hughfdjackson.com/javascript/why-curry-helps/">curried</a> functions</li>
+   <li><a href="/docs#debounce"><code>_.debounce</code></a> &amp; <a href="/docs#throttle"><code>_.throttle</code></a> accept additional <code>options</code> for more control</li>
+   <li><a href="/docs#findIndex"><code>_.findIndex</code></a> &amp; <a href="/docs#findKey"><code>_.findKey</code></a> for finding indexes &amp; keys</li>
+   <li><a href="/docs#forEach"><code>_.forEach</code></a> supports exiting early</li>
+   <li><a href="/docs#forIn"><code>_.forIn</code></a> for iterating own &amp; inherited properties</li>
+   <li><a href="/docs#forOwn"><code>_.forOwn</code></a> for iterating own properties</li>
+   <li><a href="/docs#isPlainObject"><code>_.isPlainObject</code></a> for checking if values are created by <code>Object</code></li>
+   <li><a href="/docs#mapValues"><code>_.mapValues</code></a> for <a href="/docs#map">mapping</a> values to an object</li>
+   <li><a href="/docs#merge"><code>_.merge</code></a> for a deep <a href="/docs#extend"><code>_.extend</code></a></li>
+   <li><a href="/docs#parseInt"><code>_.parseInt</code></a> for consistent behavior</li>
+   <li><a href="/docs#pull"><code>_.pull</code></a> &amp; <a href="/docs#remove"><code>_.remove</code></a> for mutating arrays</li>
+   <li><a href="/docs#random"><code>_.random</code></a> supports returning floating-point numbers</li>
+   <li><a href="/docs#sortBy"><code>_.sortBy</code></a> supports sorting by multiple properties</li>
+   <li><a href="/docs#runInContext"><code>_.runInContext</code></a> for collisionless mixins &amp; easier mocking</li>
+   <li><a href="/docs#support"><code>_.support</code></a> for flagging environment features</li>
+   <li><a href="/docs#template"><code>_.template</code></a> supports <a href="/docs#templateSettings_imports"><em>“imports”</em></a> options &amp; <a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-template-literal-lexical-components">ES6 template delimiters</a></li>
+   <li><a href="/docs#transform"><code>_.transform</code></a> as a powerful alternative to <a href="/docs#reduce"><code>_.reduce</code></a> for transforming objects</li>
+   <li><a href="/docs#where"><code>_.where</code></a> supports deep comparisons</li>
+   <li><a href="/docs#xor"><code>_.xor</code></a> as a companion to <a href="/docs#difference"><code>_.difference</code></a>, <a href="/docs#intersection"><code>_.intersection</code></a>, &amp; <a href="/docs#union"><code>_.union</code></a></li>
+   <li><a href="/docs#clone"><code>_.clone</code></a>, <a href="/docs#isEqual"><code>_.isEqual</code></a>, &amp; <a href="/docs" title="_.assign, _.cloneDeep, _.first, _.initial, _.last, _.merge, _.rest">more</a> accept callbacks</li>
+   <li><a href="/docs#contains"><code>_.contains</code></a>, <a href="/docs#toArray"><code>_.toArray</code></a>, &amp; <a href="/docs" title="_.at, _.countBy, _.every, _.filter, _.find, _.forEach, _.forEachRight, _.groupBy, _.invoke, _.map, _.max, _.min, _.pluck, _.reduce, _.reduceRight, _.reject, _.shuffle, _.size, _.some, _.sortBy, _.where">more</a> accept strings</li>
+   <li><a href="/docs#findLast"><code>_.findLast</code></a>, <a href="/docs#findLastIndex"><code>_.findLastIndex</code></a>, &amp; <a href="/docs" title="_.findLastKey, _.forEachRight, _.forInRight, _.forOwnRight, _.partialRight">more</a> right-associative methods</li>
+  </ul>
+
+  <h2 id="support">Support</h2>
+  <p>Tested in Chrome (19, 36-37), Firefox (3, 20, 31-32), IE 6-11, Opera 23-24, Safari 5-7, Node.js 0.8.26~0.10.32, PhantomJS 1.9.7, RingoJS 0.9, &amp; Rhino 1.7RC5.</p>
+  <p>Automated browser test runs <a href="https://saucelabs.com/u/lodash">are available</a> as well as CI runs for <a href="https://travis-ci.org/lodash/lodash/">lodash</a>, <a href="https://travis-ci.org/lodash/lodash-cli/">lodash-cli</a>, <a href="https://travis-ci.org/lodash/lodash-amd/">lodash-amd</a>, <a href="https://travis-ci.org/lodash/lodash-node/">lodash-node</a>, &amp; <a href="https://travis-ci.org/lodash/grunt-lodash">grunt-lodash</a>. Special thanks to <a href="https://saucelabs.com/">Sauce Labs</a> for providing automated browser testing.</p>
+
+  <script>!function(g,f,j,i,h){onload=function(){var n="iframe",m="frameborder=0 scrolling=0 allowtransparency",e="//platform.twitter.com/widgets",d="dnt=true&amp;screen_name="+f+"&amp;size=m",c="dnt=true&amp;counturl=http://"+j+".com&amp;dnt=true&amp;size=m&amp;text="+h+"&amp;url=https://"+j+".com/",b=g.getElementById(i),a=g.createElement("div");a.innerHTML="<"+n+" "+m+' style="width:112px;height:20px" src="'+e+"/follow_button.html?"+encodeURI(d)+'"></'+n+"><"+n+" "+m+' style="width:109px;height:20px" src="'+e+"/tweet_button.html?"+encodeURI(c).replace(/%25/g,'%')+'"></'+n+">";b.appendChild(a.firstChild);b.appendChild(a.firstChild)}}(document,"bestiejs","lodash","social","Are you still using Underscore.js? Check out Lo-Dash: consistency, customization, performance, %26 extras")</script>
+  <footer><p><a href="/">Lo-Dash</a> by <a href="http://allyoucanleet.com/">John-David Dalton</a>, <a href="http://www.iceddev.com/">Blaine Bublitz</a>, <a href="http://kitcambridge.be/">Kit Cambridge</a>, &amp; <a href="https://mathiasbynens.be/">Mathias Bynens</a></p></footer>
+  <script src="/_js/lodash.compat.js"></script>
+  <script>_gaq=[['_setAccount','UA-6065217-64'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+ </body>
+</html>
