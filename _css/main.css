@@ -41,6 +41,35 @@ footer { display:block; background:#eee; padding:1em 0 1em 0; text-align:center;
 #docs h2 { margin:.5em 0 0 0; }
 #docs h3 { box-shadow:0 .25em .5em #d3d3d3; border-top:1px solid #d3d3d3; border-bottom:1px solid #d3d3d3; margin:.5em 0; padding:.75em 0 .75em 10px; }
 #docs footer { height:3em; margin-top:1.5em; width:100%; }
+/* Changes based on https://github.com/lodash/lodash/issues/791#issuecomment-64414912 */
+#docs h3 {
+  background-color: #6D426D;
+}
+
+#docs h3 > code {
+  color: #EEEEEE;
+}
+
+#docs h3 .nu0 {
+  color: #D0CB71;
+}
+
+#docs h3 .br0 {
+  color: #FC83FF;
+}
+
+#docs h3 .sy0 {
+  color: #DF74E2;
+  font-weight: bold;
+}
+
+#docs h3 .me1 {
+  color: #FFFFFF;
+}
+
+#docs h3 .kw2 {
+  color: #71D0C9;
+}
 
 /* syntax highlighting */
 .kw1, .kw3 { color:#006; }
